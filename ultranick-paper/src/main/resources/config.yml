@@ -1,0 +1,39 @@
+# ========================================================
+# UltraNick - Paper Backend Companion by Chatbxn
+# ========================================================
+
+redis:
+  enabled: true
+  host: "127.0.0.1"
+  port: 6379
+  password: ""
+  database: 0
+  timeout: 3000
+  channel: "ultranick:events"
+  key-prefix: "ultranick:"
+
+settings:
+  modify-chat: true
+  modify-tablist: true
+  modify-nametags: true
+  modify-join-quit-messages: true
+  modify-death-messages: true
+  auto-refresh-viewers: true
+
+ranks:
+  Spieler:
+    prefix: "&7Spieler &8| &7"
+    suffix: ""
+    chat-color: "&7"
+  Default:
+    prefix: "&7"
+    suffix: ""
+    chat-color: "&7"
+  VIP:
+    prefix: "&aVIP &8| &a"
+    suffix: ""
+    chat-color: "&f"
+  Premium:
+    prefix: "&6Premium &8| &6"
+    suffix: ""
+    chat-color: "&f"

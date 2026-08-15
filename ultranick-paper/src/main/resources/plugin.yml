@@ -1,0 +1,37 @@
+name: UltraNick
+version: 1.0.0
+main: net.ultranick.paper.UltraNickPaperPlugin
+api-version: '1.20'
+author: Chatbxn
+description: High-Performance Paper backend disguise companion for UltraNick
+commands:
+  nick:
+    description: Verstecke deinen Spielernamen und Skin
+    permission: ultranick.use
+    usage: /<command> [Name]
+  unnick:
+    description: Hebe deine Tarnung auf
+    permission: ultranick.use
+    usage: /<command>
+  realname:
+    description: Ermittle die echte Identität eines getarnten Spielers
+    permission: ultranick.realname
+    usage: /<command> <Nickname>
+  ultranick:
+    description: UltraNick Administration
+    permission: ultranick.admin
+    aliases: [unick]
+    usage: /<command> [info|reload|api]
+permissions:
+  ultranick.use:
+    description: Ermöglicht das Nicken
+    default: op
+  ultranick.custom:
+    description: Ermöglicht das Wählen eigener Nicknamen
+    default: op
+  ultranick.realname:
+    description: Ermöglicht das Aufdecken echter Spielernamen
+    default: op
+  ultranick.admin:
+    description: Volle UltraNick Administrationsrechte
+    default: op
